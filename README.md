@@ -17,6 +17,7 @@ Definición inicial. Sin sensor elegido, prototipo físico ni calibración compl
 
 - [Especificación del piloto](specs/001-observar-sustrato/spec.md).
 - [Método y arquitectura compartida](docs/metodologia.md).
+- [Coordinación general en Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
 ## Próximas decisiones
 
