@@ -15,8 +15,8 @@ Initial definition. No sensor has been selected, and no physical prototype or ca
 
 ## Documents
 
-- [Pilot specification](specs/001-observar-sustrato/spec.md).
-- [Shared method and architecture](docs/metodologia.md).
+- [Pilot specification](specs/001-observe-growing-medium/spec.md).
+- [Shared method and architecture](docs/method.md).
 - [Program coordination in Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
 ## Next decisions
