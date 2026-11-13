@@ -13,6 +13,16 @@ Initial definition. No sensor has been selected, and no physical prototype or ca
 - Show an unknown state when recent readings are missing or the sensor fails.
 - Consider sending an alert to a central display later.
 
+## Technology map
+
+| Area | Current direction | Status |
+| --- | --- | --- |
+| Moisture sensing | Measure the growing medium for one specific plant; select and calibrate a probe after observing the real pot and medium. | Required capability; sensor technology open. |
+| Local feedback | Show normal, check-medium, and unknown states. | Behavior proposed; physical interface open. |
+| Connectivity | Local Wi-Fi may carry a later alert to the central display. | Candidate; not needed for the first local test. |
+| Platform and power | Controller, firmware, power source, and enclosure. | Open pending placement and measurements. |
+| Documentation and localization | Living English specifications; English and Spanish product text. Use Lingui if a JavaScript/TypeScript interface is built. | Language direction agreed; Spec Kit and Lingui not installed. |
+
 ## Documents
 
 - [Pilot specification](specs/001-observe-growing-medium/spec.md).
