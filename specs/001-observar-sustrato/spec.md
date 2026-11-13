@@ -1,44 +1,44 @@
-# Especificación 001: observar el sustrato
+# Specification 001: Observe the Growing Medium
 
-**Estado:** propuesta para validar.
+**Status:** proposal for validation.
 
-## Propósito
+## Purpose
 
-Ayudar a decidir cuándo revisar una planta concreta sin presentar una lectura aislada como certeza de que necesita riego.
+Help decide when to check one specific plant without treating an isolated reading as proof that it needs watering.
 
-## Comportamiento esperado
+## Expected behavior
 
-1. El sistema registra lecturas de humedad de una planta identificada y permite compararlas en el tiempo.
-2. Una indicación de revisión aparece únicamente tras lecturas consistentes con el criterio calibrado para esa planta.
-3. Cuando los datos son antiguos, ausentes o incoherentes, informa «estado desconocido».
-4. El aviso puede descartarse o restablecerse después de revisar la planta; la regla exacta queda pendiente de la prueba.
+1. The system records moisture readings for an identified plant and makes them comparable over time.
+2. A suggestion to check the growing medium appears only after readings consistently meet the rule calibrated for that plant.
+3. Old, missing, or inconsistent data produces an “unknown” state.
+4. The suggestion can be dismissed or reset after checking the plant; the exact rule remains to be defined through testing.
 
-## Criterios de aceptación del piloto
+## Pilot acceptance criteria
 
-- Se puede distinguir un estado normal, «revisar sustrato» y «desconocido».
-- Una lectura única anómala no dispara el aviso.
-- La desconexión del sensor no se interpreta como sequedad.
-- El umbral se documenta con observaciones de la planta de prueba, sin afirmar que sirva para todas.
+- Normal, “check growing medium,” and unknown states can be distinguished.
+- A single anomalous reading does not trigger the suggestion.
+- Sensor disconnection is not interpreted as dryness.
+- The threshold is documented with observations from the test plant and is not presented as universal.
 
-## Primera prueba propuesta
+## Proposed first test
 
-**Condición previa:** elegir y registrar una planta, maceta, sustrato, lugar de uso y sonda. La prueba no se declara realizada hasta disponer de mediciones físicas.
+**Prerequisite:** choose and record a plant, pot, growing medium, use location, and probe. The test is not considered completed until physical measurements exist.
 
-1. Marcar una posición y profundidad de inserción para poder repetir las lecturas sin cambiar deliberadamente la geometría.
-2. Registrar varias lecturas seguidas antes de un riego habitual, con hora, valor bruto, observación manual del sustrato y posición de la sonda.
-3. Registrar varias lecturas después del riego y durante el secado normal, manteniendo la posición. Anotar también cambios de maceta, sustrato o ubicación.
-4. Comparar la variación entre lecturas cercanas con la variación observada a lo largo del secado. Si no se distinguen, revisar sensor y método antes de proponer una regla.
-5. Probar por separado una lectura anómala, la falta de lectura y una lectura antigua. Deben producir un estado prudente, nunca una orden de riego.
-6. Documentar los datos, observaciones, regla candidata y excepciones. El intervalo de lectura, la vigencia y el criterio de «lecturas consistentes» se fijarán a partir de esta evidencia.
+1. Mark an insertion position and depth so readings can be repeated without deliberately changing the geometry.
+2. Record several consecutive readings before a normal watering, including time, raw value, manual observation of the growing medium, and probe position.
+3. Record several readings after watering and through normal drying, keeping the position consistent. Note any changes to pot, growing medium, or location.
+4. Compare variation among nearby readings with variation observed during drying. If they cannot be distinguished, revisit the sensor and method before proposing a rule.
+5. Test an anomalous reading, a missing reading, and an old reading separately. They must produce a cautious state, never an instruction to water.
+6. Document the data, observations, candidate rule, and exceptions. Set reading interval, data freshness, and the meaning of “consistent readings” from this evidence.
 
-## Límite de interpretación
+## Interpretation limit
 
-El sensor observa una zona del sustrato; no diagnostica la salud de toda la planta. «Revisar sustrato» pide una comprobación humana. No se usará «regar ahora» como conclusión automática de una lectura aislada.
+The sensor observes one area of the growing medium; it does not diagnose the health of the whole plant. “Check growing medium” asks for a human check. “Water now” will not be inferred automatically from one isolated reading.
 
-## Fuera de alcance por ahora
+## Out of scope for now
 
-Riego automático, diagnóstico de salud de la planta y sincronización con la pantalla central.
+Automatic watering, plant-health diagnosis, and synchronization with the central display.
 
-## Preguntas abiertas
+## Open questions
 
-¿Qué planta y maceta? ¿Qué tecnología de sonda resiste el uso previsto? ¿Qué intervalo de lectura y antigüedad máxima son adecuados? ¿Cómo se confirma que el aviso fue atendido?
+Which plant and pot? Which probe technology will withstand the intended use? What reading interval and maximum data age are appropriate? How is the suggestion acknowledged?
