@@ -1,25 +1,24 @@
-# Monitor de plantas
+# Plant Monitor
 
-Proyecto independiente para ayudar a detectar cuándo conviene revisar la humedad del sustrato de una planta. La primera versión observará una planta real y dará una indicación prudente; no regará automáticamente.
+An independent project to help decide when to check the moisture of one plant's growing medium. The first version will observe a real plant and give a cautious suggestion. It will not water automatically.
 
-## Estado
+## Status
 
-Definición inicial. Sin sensor elegido, prototipo físico ni calibración completada.
+Initial definition. No sensor has been selected, and no physical prototype or calibration has been completed.
 
-## Primer alcance
+## Initial scope
 
-- Medir humedad de forma comparable en la misma planta.
-- Pedir que se revise el sustrato cuando varias lecturas coherentes indiquen sequedad.
-- Mostrar estado desconocido si faltan lecturas recientes o falla el sensor.
-- Considerar después el envío de un aviso a una pantalla central.
+- Collect readings that can be compared over time for the same plant.
+- Suggest checking the growing medium only after several consistent readings indicate dryness under a calibrated rule.
+- Show an unknown state when recent readings are missing or the sensor fails.
+- Consider sending an alert to a central display later.
 
-## Documentos
+## Documents
 
-- [Especificación del piloto](specs/001-observar-sustrato/spec.md).
-- [Método y arquitectura compartida](docs/metodologia.md).
-- [Coordinación general en Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
+- [Pilot specification](specs/001-observar-sustrato/spec.md).
+- [Shared method and architecture](docs/metodologia.md).
+- [Program coordination in Notion](https://app.notion.com/p/416504754f0881afaaa6e4297e39c813).
 
-## Próximas decisiones
+## Next decisions
 
-Planta y maceta de prueba; ubicación de sonda; tecnología de sensor; alimentación; calibración; frecuencia de lectura; umbral tras observar datos reales; canal de aviso local.
-
+Test plant and pot; probe placement; sensor technology; power; calibration; reading frequency; threshold based on observed data; local alert channel.
